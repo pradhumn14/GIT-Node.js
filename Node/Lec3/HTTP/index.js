@@ -3,7 +3,12 @@ const http = require("http")
 
 const server = http.createServer((req, res)=>{
 
+    if(req.url == '/home') {
 
+        res.write("Hello World")
+
+        res.end();
+    }
 
 
 })
